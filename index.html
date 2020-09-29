@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMW THE SERIES</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/color/100/000000/bmw--v1.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  </head>
+<body>
+  <!------------------------------------- ส่วนไอดอนแบนด้านบนสุด --------------------------------------->
+    <div class="topnav" id="topnav">
+                     <div class="logo">
+                         <img src="images/logo1.png" style="height:120px;">
+                     </div>
+             </div>
+             <!------------------------------------- เมนูข้างบน --------------------------------------->
+             <div class="topmenu" id="mytopmenu">
+              <a href="#a" class="active">รุ่นรถของเรา</a>
+              <a href="#a">ค้นหาและการซื้อ</a>
+              <a href="#caa">บริการทางการเงิน</a>
+              <a href="#a">บริการหลังการขาย</a>
+              <a href="#a">นวัตกรรมและข้อมูลอื่นๆ</a>
+              <div class="login">
+              <a href="#a">LOGIN</a>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+                 <div class="grid-container">
+                   <!------------------------------------- ส่วนHeader แบบside  -------------------------------------->
+                 <div class="header">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="item active">
+                        <img src="images/bmw4.jpg"  style="width:100%;">
+                      </div>
+                
+                      <div class="item">
+                        <img src="images/bmw6.jpg"  style="width:100%;">
+                        <div class="text-block1">
+                          <h4><b>BMW SERIES X</b></h4>
+                          <p>ประสบการณ์ใหม่แห่งการขับรถยนต์ที่คุณขาดไม่ถึง</p>
+                        </div>
+                        <div class="text-block2">
+                          <h4>ทดลองขับได้แล้ววันนี้</h4>
+                          <p>สิ่งใหม่กับรถยนต์หรู</p>
+                        </div>
+                      </div>
+                    
+                      <div class="item">
+                        <img src="images/bmw5.jpg"  style="width:100%;">
+                        <div class="text-block1">
+                          <h4><b>BMW SERIES I4</b></h4>
+                          <p>รถไฟฟ้า New Gen โดย BMW </p>
+                        </div>
+                        <div class="text-block2">
+                          <h4>ทดลองขับได้แล้ววันนี้</h4>
+                          <p>สิ่งใหม่กับรถยนต์หรู</p>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="images/bmw9.jpg"  style="width:100%;">
+                      </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+                 </div>
+
+                 <div class="texthead"> <br><img src="images/icon.png" style="width:50px;"><h1><b><span id="type"></span></b></h1></div>
+                 <!------------------------------------- buttongroup บอกตัวรถยนต์ในแต่ละราคา--------------------------------------->
+                 <div class="menucar" id="menucar">
+                  <div class="btn-group" style="width: auto;" id="button-all">
+                    <button type="button" style="width:auto" id="active"onclick="c()">ทุกรุ่น</button>
+                    <button type="button" style="width:auto" onclick="c1()">ตัวท็อป</button>
+                    <button type="button" style="width:auto" onclick="c2()">รองท็อป</button>
+                    <button type="button" style="width:auto" onclick="c3()">ประหยัดสุด</button>
+                </div>
+                 </div>
+                 <!------------------------------------- แทบside แบบ fixed ข้างขวา--------------------------------------->
+                <div id="mySidenav" class="sidenav" > 
+                  <a href="#" id="sidemenu1"><span class="glyphicon glyphicon-list-alt"></span> &nbsp&nbsp&nbsp      โบว์ชัวร์</a>
+                  <a href="#" id="sidemenu2"><span class="glyphicon glyphicon-search"></span> &nbsp &nbsp &nbsp      ค้นหาตัวแทนจำหน่าย</a>
+                  <a href="#" id="sidemenu3"><span class="glyphicon glyphicon-road"></span>  &nbsp &nbsp&nbsp  จองเวลาเพื่อทดลองขับ</a>
+                  <a href="#" id="sidemenu4"><span class="glyphicon glyphicon-hourglass"></span> &nbsp &nbsp &nbsp   เครื่องมือคำนวณค่างวด</a>
+                  <a href="#" id="sidemenu5"><span class="glyphicon glyphicon-earphone"></span>  &nbsp &nbsp&nbsp   ติดต่อเรา</a>
+                  <a href="#" id="sidemenu6"><span class="glyphicon glyphicon-comment"></span>  &nbsp &nbsp&nbsp   Live chat</a>
+                </div>
+                <!------------------------------------- modelcar รุ่นรถยนต์ --------------------------------------->
+                 <div class="modelcar">
+                  <a href="#">Series X</a><br>
+                  <a href="#">Z4</a><br>
+                  <a href="#">M Sport</a><br>
+                  <a href="#">i8 / i3</a><br>
+                  <hr>
+                  <a href="#">ดูทั้งหมด</a><br>
+                 </div>
+                <!-------------------------------------content car card--------------------------------------->
+      <div class="content">
+        <div class="row">
+          <div class="column" id="one1">
+            <div class="card" >
+              <h3><b>BMW I8 2019</b></h3>
+              <p>ราคารวมภาษีมูลค่าเพิ่ม</p>
+              <p>ราคา 16,800,900 บาท</p>
+              <div class="im">
+                <img src="images/i8_1_1.png"  style="width:100%;">
+                <div class="overlay">
+                  <img src="images/i8_1_2.png"  style="width:100%;">
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp&nbspข้อมูลเพิ่มเติม</a>
+                <a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp&nbspลองขับรถ</a>
+                <a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp&nbspลองประกอบรถ</a>
+              </div>
+            </div>
+          </div>
+          <div class="column"id="two">
+            <div class="card">
+              <h3><b>BMW SERIES X5</b></h3>
+              <p>ราคารวมภาษีมูลค่าเพิ่ม</p>
+              <p>ราคา 1,960,900 บาท</p>
+              <div class="im">
+                <img src="images/x5_1.jpeg"  style="width:100%;">
+                <div class="overlay">
+                  <img src="images/x5_1_2.png" style="width:100%;" >
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp&nbspข้อมูลเพิ่มเติม</a>
+                <a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp&nbspลองขับรถ</a>
+                <a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp&nbspลองประกอบรถ</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column" id="three">
+            <div class="card" >
+              <h3><b>BMW 3 SERIES </b></h3>
+              <p>ราคารวมภาษีมูลค่าเพิ่ม</p>
+              <p>ราคา 1,200,900 บาท</p>
+              <div class="im">
+                <img src="images/s3_1.png"style="width:100%;">
+                <div class="overlay">
+                  <img src="images/s3_1_2.png" style="width:100%;" >
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp&nbspข้อมูลเพิ่มเติม</a>
+                <a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp&nbspลองขับรถ</a>
+                <a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp&nbspลองประกอบรถ</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="column"id="one2">
+            <div class="card" >
+              <h3><b>BMW SERIES 5</b> </h3>
+              <p>ราคารวมภาษีมูลค่าเพิ่ม</p>
+              <p>ราคา 3,600,900 บาท</p>
+              <div class="im">
+                <img src="images/s5_1.jpg"  style="width:100%;">
+                <div class="overlay">
+                  <img src="images/s5_1_2.png"  style="width:100%;">
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp&nbspข้อมูลเพิ่มเติม</a>
+                <a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp&nbspลองขับรถ</a>
+                <a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp&nbspลองประกอบรถ</a>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="one3">
+            <div class="card" >
+              <h3><b>BMW SERIES 7</b></h3>
+              <p>ราคารวมภาษีมูลค่าเพิ่ม</p>
+              <p>ราคา 7,600,900 บาท</p>
+              <div class="im">
+                <img src="images/s7_1.jpg"  style="width:100%;">
+                <div class="overlay">
+                  <img src="images/s7_1_2.png"  style="width:100%;">
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp&nbspข้อมูลเพิ่มเติม</a>
+                <a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp&nbspลองขับรถ</a>
+                <a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp&nbspลองประกอบรถ</a>
+              </div>
+            </div>
+          </div>
+          <div class="column" id="one4">
+            <div class="card" >
+              <h3><b>BMW SERIES X1</b></h3>
+              <p>ราคารวมภาษีมูลค่าเพิ่ม</p>
+              <p>ราคา 2,850,900 บาท</p>
+              <div class="im">
+                <img src="images/X1_1.jpg"  style="width:100%;">
+                <div class="overlay">
+                  <img src="images/X1_1_2.png"  style="width:100%;">
+                </div>
+              </div>
+              <div class="dropdown-content">
+                <a href="#"><span class="glyphicon glyphicon-earphone"></span>&nbsp&nbspข้อมูลเพิ่มเติม</a>
+                <a href="#"><span class="glyphicon glyphicon-road"></span>&nbsp&nbspลองขับรถ</a>
+                <a href="#"><span class="glyphicon glyphicon-search"></span>&nbsp&nbspลองประกอบรถ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+<!------------------------------------- ส่วนหมายเหตุ --------------------------------------->
+      <div class="note">
+        <hr>
+        <button class="collapsible">หมายเหตุ</button>
+        <div class="contentnote">
+        <p>ราคาทั้งหมดที่แสดงอยู่คือราคาแนะนำข้างต้นรวมภาษีมูลค่าเพิ่มร้อยละเจ็ด บริษัท บีเอ็มดับเบิ้ลยู (ประเทศไทย) จำกัด ขอสงวนสิทธิ์ในการเปลี่ยนแปลงราคาแนะนำและอุปกรณ์ โดยมิต้องแจ้งให้ทราบล่วงหน้า
+           ภาพประกอบอาจแสดงอุปกรณ์เสริมและรายการของอุปกรณ์เสริมซึ่งไม่ได้เป็นส่วนหนึ่งของข้อกำหนดมาตรฐาน กับประเภทของรุ่นรถยนต์ ลักษณะ อุปกรณ์เสริม และ /หรือสีที่มีให้ในแต่ละประเทศ รถยนต์บางรุ่นอาจจะไม่มีประเภท 
+           ลักษณะ อุปกรณ์เสริม และ /หรือสีที่แสดงในประเทศของคุณหรืออาจมีรายละเอียดเฉพาะที่แตกต่างกัน นอกจากนี้รถยนต์บางรุ่น ลักษณะ อุปกรณ์เสริม และ /หรือสีอาจมีใช้ร่วมกับรุ่นอื่นเท่านั้น 
+           สำหรับข้อมูลที่เป็นปัจจุบันและเฉพาะเจาะจงมากขึ้นเกี่ยวกับประเภทของรุ่น ลักษณะ อุปกรณ์เสริม และ /หรือสีที่มีในประเทศของคุณและการกำหนดราคานั้น สามารถติดต่อผู้จำหน่ายบีเอ็มดับเบิ้ลยูอย่างเป็นทางการใกล้บ้านคุณ
+        </p>
+      </div>
+    </div>
+      <!------------------------------------- ส่วนfooterทั้งหมด -------------------------------------->
+      <div class="footer">
+        <div class="search">
+            <img src="images/search1.png">
+            <h2>ใช้ Model Finder เพื่อหารุ่นที่ดีที่สุดสำหรับคุณ</h2>
+            <button class="search-button"><span>ค้นหารถยนต์ของคุณเลย </span></button>
+        </div>
+        <div class="footer-button">
+          <button class="sf-button">ค้นหาผู้แทนจำหน่าย <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button class="sf-button">ทดลองขับ <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button class="sf-button">บริการด้านการเงิน <span class="glyphicon glyphicon-chevron-right"></span></button>
+          <button class="sf-button">ใบราคา โบว์ชัวร์ <span class="glyphicon glyphicon-chevron-right"></span></button>
+           </div>
+        <div class="other">
+         
+          <h2>รถยนต์ประเภทอื่นๆ</h2>
+          <div class="other-box">
+            <div class="other-motor">
+              <img src="images/other.png" style="width: 50%; border-radius: 50%; margin-top: 25px; margin-left: 15px;">
+            </div>
+            <div class="motor"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp&nbspMotorbike</div>
+            </div>
+        </div>
+        <div class="footer-detail">
+          <div class="detail-other"><h3 style="color: #1a68b6;">รถยนต์นั่งส่วนบุคคล</h3><br>
+            <hr class="hhr">
+          <h4>BMW motorrad ในเว็บไซต์สังคมออนไลน์:</h4>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <hr class="hhr">
+          </div>
+          <div class="about-me">
+            <div class="detail-about">
+              <div class="d0"><h4>เกี่ยวกับเรา</h4></div>
+              <div class="d1"><a href="#"> <h4>เกี่ยวกับบริษัท</h4></a></div>
+              <div class="d2"><a href="#"> <h4>ติดต่อเรา</h4></a></div>
+              </div>
+              <div class="head-service">
+                <div class="s0"><h4>การให้บริการออนไลน์</h4></div>
+                <div class="s1"><a href="#"> <h4>การค้นหาที่ตั้งผู้จำหน่ายฯ</h4></a></div>
+              <div class="s2"><a href="#"> <h4>การจองเวลาเพื่อทดลองขับขี่</h4></a></div>
+            </div>
+              <div class="head-guidance">
+                <div class="g0"><h4>คำแนะนำในการสั่งซื้อ</h4></div>
+                <div class="g1"><a href="#"> <h4>รายละเอียดโดยรวมของรุ่น</h4></a></div>
+              <div class="g2"><a href="#"> <h4>เครื่องมือคำนวณค่างวด</h4></a></div>
+              </div>
+              <div class="head-me">
+                <div class="m0"><h4>BMW ME</h4></div>
+                <div class="m1"><a href="#"> <h4>คำถามที่พบบ่อย</h4></a></div>
+              <div class="m2"><a href="#"> <h4>นัดหมายวันเข้ารับบริการ</h4></a></div>
+              <div class="m3"><a href="#"> <h4>BMW ME ID</h4></a></div>
+              </div>
+        </div>
+      </div>
+      <div class="credit">
+        <a href="#"> Copyrighted 2020. จัดทำเพื่อการศึกษา จากรายวิชา WEB UXUI</a> | <a href="#"> คุกกี้ </a> | <a href="#"> การป้องกันข้อมูล </a> | <a href="#"> หมายเหตุทางกฎหมาย </a> | <a href="#"> B6122942 นายสันติชัย ยะระสิทธิ์ </a>
+      </div>
+    <!------------------------------------- ส่วนกดเพื่อขึ้นไปด้านบน --------------------------------------->
+    <button onclick="topFunction()" id="myBtn" title="ขึ้นไปด้านบน"><img src="images/up.png" style="width:25px;"></button>
+      <script>
+        /*ส่วนปุ่มกลุ่ม*/
+        var header = document.getElementById("button-all");
+        var btns = header.getElementsByClassName("button");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+/*ขึ้นข้างบน*/
+var mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+function myFunction() {
+  var x = document.getElementById("mytopmenu");
+  if (x.className === "topmenu") {
+    x.className += " responsive";
+  } else {
+    x.className = "topmenu";
+  }
+}
+/*Responsive topmenu*/
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+            this.classList.toggle("active1");
+            var contentnote = this.nextElementSibling;
+             if (contentnote.style.maxHeight){
+              contentnote.style.maxHeight = null;
+             } else {
+            contentnote.style.maxHeight = contentnote.scrollHeight + "px";
+             } 
+             });  
+           }
+        </script>
+         <script>
+                  var typed = new Typed('#type', {
+          strings: ['BMW THE SERIES', 'BMW motorrad','We are Family','BMW NEW GEN'],
+          smartBackspace: true,
+          loop: true,
+          typeSpeed: 88,
+          backSpeed: 88,
+          backDelay: 1000,
+        });
+      </script>
+
+      <script>
+          function c(){
+                           document.getElementById("one1").style.display ="flex";  
+                           document.getElementById("one2").style.display ="flex";  
+                           document.getElementById("one3").style.display ="flex";  
+                           document.getElementById("one4").style.display ="flex";  
+                           document.getElementById("three").style.display  ="flex";
+                           document.getElementById("two").style.display ="flex";
+                         }
+        function c1(){
+                           document.getElementById("one1").style.display ="flex";  
+                           document.getElementById("one2").style.display ="flex";  
+                           document.getElementById("one3").style.display ="flex";  
+                           document.getElementById("one4").style.display ="none";   
+                           document.getElementById("three").style.display ="none";
+                           document.getElementById("twoo").style.display ="none";
+                         }
+         function c2(){
+                           document.getElementById("one1").style.display ="none";  
+                           document.getElementById("one2").style.display ="none";  
+                           document.getElementById("one3").style.display ="none";  
+                           document.getElementById("one4").style.display ="flex";    
+                           document.getElementById("two").style.display ="flex";
+                           document.getElementById("three").style.display ="none";
+                         }
+                         function c3(){
+                           document.getElementById("one1").style.display ="none";  
+                           document.getElementById("one2").style.display ="none";  
+                           document.getElementById("one3").style.display ="none";  
+                           document.getElementById("one4").style.display ="none";    
+                           document.getElementById("two").style.display ="none";
+                           document.getElementById("three").style.display ="flex";
+                         }
+      </script>
+        
+</body>
+</html>
